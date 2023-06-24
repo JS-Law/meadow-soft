@@ -1,0 +1,29 @@
+*{
+    background-color: #0a0908;
+    color: #c6ac8f;
+   margin: 0;
+   box-sizing: border-box;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #c6ac8f;
+    /* padding-bottom: 100%; */
+}
+.namespace{
+
+}
+.description{
+    
+}
+
+.font{
+    display: flex;
+    font-size: large;
+    font-family: reglo;
+    text-transform: uppercase;
+    padding-left: .5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
