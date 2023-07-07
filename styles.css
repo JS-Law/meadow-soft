@@ -25,6 +25,7 @@
 .ascii-banner{
     display: flex;
     text-align: center;
+    padding-bottom: 2%;
 }
 
 .name{
@@ -47,4 +48,37 @@ a{
 }
 a:hover{
     text-decoration: line-through;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+.title{
+    font-family: reglo;
+}
+.about{
+
+}
+.contact{
+
+}
+.portfolio{
+    display: flex;
+}
+img{
+    height: auto;
+    width: 50%;
+    aspect-ratio: 16 / 9;
+}
+
+
+.resource-title{
+    display: flex;
+    font-family: reglo;
+    justify-content: center;
+    padding-top: 2%;
+}
+.resources{
+    display: flex;
 }
