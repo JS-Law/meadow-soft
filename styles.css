@@ -57,12 +57,12 @@ a:hover{
 .title{
     font-family: reglo;
 }
-.about{
+/* .about{
 
 }
 .contact{
 
-}
+} */
 .portfolio{
     display: flex;
 }
