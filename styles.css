@@ -9,6 +9,7 @@
 body{
     font-family: 'Quicksand', sans-serif;
     font-family: 'Inter', sans-serif;
+    /* padding-top: 25%; */
 }
 [data-letter-crap] {
     display: flex;
@@ -21,6 +22,7 @@ body{
 	padding-left: .375%;
 	padding-right: .375%;
     margin-top: -20px;
+    /* max-height: 200px; */
 
 }
 
@@ -28,22 +30,25 @@ body{
     display: flex;
     flex-direction: column;
     border: solid 1px #c6ac8f;
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    margin-top: 3px;
-    margin-left: 5px;
-    margin-right: 5px;
+    right: 0; */
+    margin-top: .1%;
+    margin-left: .1%;
+    margin-right: .1%;
+    /* height: 15%; */
+    /* max-height: 200px; */
 
 }
 .ascii-banner{
     display: flex;
     text-align: center;
     justify-content: center;
-    padding-bottom: 2%;
-    padding-left: .5%;
-	padding-right: .5%;
+    padding-bottom: .375%;
+    padding-left: .375%;
+	padding-right: .375%;
+    /* max-height: 200px; */
 }
 
 .name{
@@ -56,11 +61,16 @@ body{
     padding-top: 2px;
     margin-top: -.3px;
 }
-.link-bar{
+.navbar{
     display: flex;
     justify-content: space-around;
     padding-top: .375%;
-    padding-bottom: 1%;
+    padding-bottom: .5%;
+}
+.navlink{
+    font-weight: 100;
+    font-size: 110%;
+    letter-spacing: 5px;
 }
 a{
     text-decoration: none;
@@ -71,27 +81,34 @@ a:hover{
 .content{
     display: flex;
     flex-direction: column;
-    margin-top: calc(27% - 5px);
 }
-.curve { 
-	width: 25%;
-	height: auto;
-	float: left;
-	margin-right:2rem; 
-	shape-outside:circle();
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
 }
 .about-text{
-    display: flex;
-    /* text-transform: lowercase; */
-    font-weight: 200;
+    /* display: flex; */
+    font-weight: 100;
     font-size: 80%;
-    max-width: 825px;
-    align-items: center;
+
+}
+img{
+    min-width: 125px;
+    height: auto;
+    border-radius: 50%;
+    max-width: 150px;
+}
+.headshot{
+    padding-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .content-text{
     display: flex;
-    text-transform: lowercase;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 80%;
 }
 .title{
@@ -103,13 +120,7 @@ a:hover{
 .portfolio{
     display: flex;
 }
-.image{
-    width: 30%;
-    height: auto;
-    margin-right: 1.5%;
-    border-radius: 50%;
-    max-width: 125px;
-}
+
 .resource-title{
     display: flex;
     font-weight: 100;
@@ -142,6 +153,7 @@ a:hover{
 }
 .resources{
     display: flex;
+    /* flex-wrap: no-wrap; */
     font-size: 100%;
     align-items: start;
 
