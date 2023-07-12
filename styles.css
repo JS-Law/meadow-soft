@@ -63,6 +63,7 @@ body{
 }
 .navbar{
     display: flex;
+    font-size: 70%;
     justify-content: space-around;
     padding-top: .375%;
     padding-bottom: .5%;
