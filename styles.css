@@ -1,15 +1,19 @@
+/* 
+COLOR PALETTE
+--khaki: #b09a7fff;
+--gunmetal: #2b3235ff;
+--eerie-black: #1f1c17ff;
+--night: #0a0a08ff; */
+
 *{
     background-color: #0a0908;
     color: #c6ac8f;
-    /* margin-top: 2px; */
-    /* margin-left: 5px;
-    margin-right: 5px; */
     box-sizing: border-box;
 }
 body{
     font-family: 'Quicksand', sans-serif;
     font-family: 'Inter', sans-serif;
-    /* padding-top: 25%; */
+    
 }
 [data-letter-crap] {
     display: flex;
@@ -22,24 +26,16 @@ body{
 	padding-left: .375%;
 	padding-right: .375%;
     margin-top: -20px;
-    /* max-height: 200px; */
-
 }
 
 .header{
     display: flex;
     flex-direction: column;
     border: solid 1px #c6ac8f;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; */
     margin-top: .1%;
     margin-left: .1%;
     margin-right: .1%;
-    /* height: 15%; */
-    /* max-height: 200px; */
-
+    
 }
 .ascii-banner{
     display: flex;
@@ -48,7 +44,6 @@ body{
     padding-bottom: .375%;
     padding-left: .375%;
 	padding-right: .375%;
-    /* max-height: 200px; */
 }
 
 .name{
@@ -60,6 +55,7 @@ body{
     text-transform: uppercase;
     padding-top: 2px;
     margin-top: -.3px;
+    text-shadow: rgba(255,255,255,0.9) 0px 0px 7px;
 }
 .navbar{
     display: flex;
@@ -83,14 +79,31 @@ a:hover{
     display: flex;
     flex-direction: column;
 }
+.about-title{
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 1%;
+    font-size: 210%;
+    text-shadow: rgba(255,255,255,0.9) 0px 0px 7px;
+}
 .about{
     display: flex;
     flex-direction: column;
-    justify-items: center;
-
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5%;
+    border-bottom: #c6ac8f dashed 1px;
+    
+    
 }
 .about-text{
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
     font-weight: 100;
     font-size: 80%;
 
@@ -102,10 +115,11 @@ img{
     max-width: 150px;
 }
 .headshot{
-    padding-top: 2%;
+    padding-top: 5%;
     width: 100%;
     display: flex;
     justify-content: center;
+    
 }
 .content-text{
     display: flex;
@@ -116,6 +130,7 @@ img{
     font-weight: 100;
     letter-spacing: 2px;
     margin-bottom: 1%;
+    font-size: 210%;
 }
 
 .portfolio{
