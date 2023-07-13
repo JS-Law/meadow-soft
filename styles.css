@@ -174,3 +174,8 @@ img{
     align-items: start;
 
 }
+.footer{
+    margin-left: -3%;
+    margin-right: -3%;
+    margin-bottom: -3%;
+}
