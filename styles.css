@@ -105,7 +105,7 @@ a:hover{
     margin-left: 5%;
     margin-right: 5%;
     font-weight: 100;
-    font-size: 70%;
+    font-size: 90%;
 }
 .headshot img{
     min-width: 125px;
@@ -128,6 +128,8 @@ a:hover{
     font-size: 80%;
 }
 .title{
+    display: flex;
+    justify-content: center;
     font-weight: 100;
     letter-spacing: 2px;
     margin-bottom: 1%;
@@ -137,18 +139,12 @@ a:hover{
 
 .portfolio{
     display: flex;
-    border-bottom: #c6ac8f dashed 1px;
+    /* border-bottom: #c6ac8f dashed 1px; */
 }
 .portfolio-cards{
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-}
-.card-one img{
-    /* max-width: 90%; */
-}
-.card-two img{
-    /* max-width: 100%; */
 }
 .resource-title{
     display: flex;
@@ -201,7 +197,7 @@ a:hover{
 
 /* REWORK THIS -- TEMPORARY */
 
-.image-gallery {
+/* .image-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10%;
@@ -225,14 +221,18 @@ a:hover{
 li{
     list-style-type: none;
 }
-
+.image-gallery img:hover{
+    transition-timing-function: ease-in;
+    transition: .3s;
+    transform: scale(1.06);
+} */
 /* REWORK THIS -- TEMPORARY */
 
 .gallery-container {
 /* position: absolute; */
 display: flex;
 justify-content: center;
-z-index: 7;
+/* z-index: 7; */
 }
 
 .thumbnails {
@@ -259,8 +259,8 @@ z-index: 2;
 }
 
 .slides {
-padding-top: 2%;
-margin-top:  16px;
+/* padding-top: 2%; */
+/* margin-top:  16px; */
 /* margin-left: 20px; */
 display: grid;
 /* justify-content: center; */
@@ -272,7 +272,7 @@ height: auto;
 overflow-y: auto;
 overscroll-behavior-x: contain;
 scroll-snap-type: x mandatory;
-scrollbar-width: none;
+/* scrollbar-width: none; */
 z-index: 2;
 }
 
@@ -300,9 +300,27 @@ transition-timing-function: ease-out;
     z-index: 20;
 }
 
-.slides::-webkit-scrollbar {
-display: none;
-}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+* {
+    scrollbar-width: 16px;
+    scrollbar-color: #0a0908 ;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #0a0908;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #0a0908;
+    border-radius: .5rem;
+    border: 1px solid #c6ac8f;
+  }
 
 .slide{
     position: relative;
